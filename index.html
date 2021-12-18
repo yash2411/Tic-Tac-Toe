@@ -30,10 +30,11 @@
             <form>
                 <div class="form-control">
                     <label for="playername">Player Name:</label>
-                    <input type="text" name="playername" id="playername">
+                    <input type="text" name="playername" id="playername" required>
                 </div>
+                <p id="config-errors"></p>
                 <div>
-                    <button type="button" class="btn btn-alt" id="cancel-btn">Cancel</button>
+                    <button type="reset" class="btn btn-alt" id="cancel-btn">Cancel</button>
                     <button type="submit" class="btn">Confirm</button>
                 </div>
             </form>
@@ -41,19 +42,19 @@
         <section id="game-configuration">
             <ol>
                 <li>
-                    <article>
+                    <article id="player-1-data">
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <p class="player-symbol">X</p>
-                        <button class="btn btn-alt" id="edit-player1-btn">Edit</button>
+                        <button class="btn btn-alt" id="edit-player1-btn" data-playerid="1">Edit</button>
                     </article>
                 </li>
                 <li>
-                    <article>
-                        <h2>Player 2</h2>
+                    <article id="player-2-data">
+                        <h2>Player 2</h2>   
                         <h3>PLAYER NAME</h3>
                         <p class="player-symbol">O</p>
-                        <button class="btn btn-alt" id="edit-player2-btn">Edit</button>
+                        <button class="btn btn-alt" id="edit-player2-btn" data-playerid="2">Edit</button>
                     </article>
                 </li>
             </ol>
