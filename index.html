@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/configuration.css">
     <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
 </head>
 
 <body>
-    <div class="backdrop"></div>
+    <div class="backdrop" id="backdrop"></div>
     <header id="main-header">
         <h1>Play Tic Tac Toe</h1>
         <p>Built with HTML CSS and JavaScript</p>
@@ -30,7 +33,7 @@
                     <input type="text" name="playername" id="playername">
                 </div>
                 <div>
-                    <button type="button" class="btn btn-alt">Cancel</button>
+                    <button type="button" class="btn btn-alt" id="cancel-btn">Cancel</button>
                     <button type="submit" class="btn">Confirm</button>
                 </div>
             </form>
@@ -42,7 +45,7 @@
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <p class="player-symbol">X</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button class="btn btn-alt" id="edit-player1-btn">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -50,7 +53,7 @@
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
                         <p class="player-symbol">O</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button class="btn btn-alt" id="edit-player2-btn">Edit</button>
                     </article>
                 </li>
             </ol>
